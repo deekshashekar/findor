@@ -15,9 +15,9 @@ const NewForm = () => {
   } = useForm<FormValues>();
 
   const onSubmit = (data: FormValues) => {
-    console.log('done', data);
+    // console.log('done', data);
+    return data;
   };
-  console.log('isSubmitting', isSubmitting);
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
